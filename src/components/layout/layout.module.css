@@ -1,0 +1,22 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* ставим картинку на фон */
+  background-image: url('../../../public/images/background.png');
+  /* картинка будет растягиваться по размеру контейнера */
+  background-size: cover;
+}
+
+
+
+.main {
+  padding: 20px 0;
+  width: 100%;
+  flex: 1;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
