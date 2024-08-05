@@ -5,14 +5,16 @@ import WeatherApp from './components/weatherApp/WeatherApp';
 import WeatherProvider from './components/weatherProvider/WeatherProvider';
 import './index.css';
 import WeatherFavorites from './components/weatherFavorites/WeatherFavorites';
+import { Provider } from 'react-redux';
+import { store } from './redux/store';
 
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
+  <Provider store={store}>
   <WeatherProvider>
-    {/* все что внутри это children для WeatherProvider */}
     <HashRouter>
       <Routes>
         <Route path='/' element={<Layout />} >
@@ -22,8 +24,8 @@ root.render(
         </Route>
       </Routes>
     </HashRouter>
-    {/* здесь заканчиваются children */}
   </WeatherProvider>
+  </Provider>
 );
 
 
