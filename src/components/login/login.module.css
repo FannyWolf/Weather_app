@@ -1,0 +1,42 @@
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание по левому краю */
+  }
+  
+  .loginForm > input {
+    margin-bottom: 3px;
+    width: auto; /* Убираем ширину на всю ширину контейнера */
+  }
+  
+  .loginForm > button {
+    background-color: rgb(79, 77, 174);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px; /* Добавляем паддинг для кнопки */
+    cursor: pointer; /* Изменяем курсор при наведении на кнопку */
+  }
+  
+  .errors {
+    color: red;
+  }
+  
+  .inputContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .errorContainer {
+    position: absolute;
+    left: 0;
+    bottom: -20px; /* Расположить сообщение об ошибке ниже input */
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 5px;
+    border: 1px solid #f5c6cb;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap; /* Убедиться, что текст в одну строку */
+  }
+  
